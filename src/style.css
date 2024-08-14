@@ -1,0 +1,93 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl, .output-canvas, .webcam, .ui
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    outline: none;
+}
+
+.webcam
+{
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.output-canvas
+{
+    z-index: 2;
+    transform: rotateY(180deg);
+}
+
+.webgl
+{
+    z-index: 3;
+}
+
+.ui
+{
+    z-index: 4;
+}
+
+.button-cont
+{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.button
+{
+    font-family: "Courier New", cursive;
+    width: fit-content;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button1
+{
+    background-color: #04AA6D;
+    margin-bottom: 15px;
+}
+
+.button2
+{
+    background-color: #008CBA
+}
+
+.score-cont
+{
+    font-family: "Courier New", cursive;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.score
+{
+    display: inline-block;
+    color: red;
+}
